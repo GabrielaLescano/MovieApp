@@ -5,7 +5,6 @@ import './Buscador.css';
 import { addMovieFavorite, getMovies } from '../../actions';
 
 
-
 export class Buscador extends Component {
   constructor(props) {
     super(props);

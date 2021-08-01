@@ -15,8 +15,8 @@ export class ConnectedList extends Component {
             this.props.movies && this.props.movies.map(movie => (
               <div>
                 <Link to={`/movie/${movie.imdbID}`}>
-                  {movie.Title}
-                  {movie.Poster}
+                  <h3>{movie.Title}</h3>
+                  <span> <img src={movie.Poster} alt='img not found'/> </span>
                 </Link>
                 <button onClick={ () => this.props.removeMovieFavorite(movie.imdbID)}>x</button>
               </div>

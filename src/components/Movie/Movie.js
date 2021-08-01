@@ -15,7 +15,7 @@ class Movie extends React.Component {
       <div className="movie-detail">
         <h1>{this.props.movie.Title}</h1>
         <h2>{this.props.movie.Year}</h2>
-        <h3>{this.props.movie.Poster}</h3>
+        <span> <img src={this.props.movie.Poster} alt='img not found' height="300px" width="230px"/> </span>
       </div>
     );
   }
