@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+
+body{
+  background-image: url('https://static.vecteezy.com/system/resources/previews/001/542/515/non_2x/neon-light-gate-background-free-vector.jpg');
+  background-size: 100%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #4c94a7be;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

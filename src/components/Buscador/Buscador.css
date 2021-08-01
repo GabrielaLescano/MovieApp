@@ -1,15 +1,60 @@
-.cnt {
-    padding-top: 10px;
-}
-.form-container {
-    display:flex;
+.container-search{
+    color: rgb(122, 234, 253);
+    display: flex;
+    justify-content: center;
     flex-direction: row;
     align-items: flex-start;
+    margin-left: 70px;
 }
 
-.form-container button {
-    margin-left: 20px;
+.form-container {
+    margin-top: -40px;
+    margin-left: 85px;
 }
-.label {
-    padding-right: 10px;
+
+
+.myButton {
+    margin-left: 40px;
+	background-color:transparent;
+	border-radius:8px;
+	border:1.4px solid rgb(223, 17, 172);
+	/* display:inline-block; */
+	cursor:pointer;
+	color:rgb(223, 17, 172);
+	font-family:Arial;
+	font-size:10px;
+	padding:6px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c70067;
 }
+.myButton:hover {
+	background-color:rgba(122, 234, 253,0.6);
+}
+.myButton:active {
+    background-color:rgba(122, 234, 253,0.6);
+	position:relative;
+	top:1px;
+}
+
+.neon {
+    animation: neonAnim 2s alternate-reverse infinite;
+    color: #ff00b3;
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+}
+@keyframes neonAnim {
+    from {
+        text-shadow:
+          0 0 25px rgba(255, 0, 212, 0.863),
+          0 0 55px rgba(255, 0, 212, 0.863),
+          0 0 115px rgba(255, 0, 212, 0.863),
+      }
+      to {
+        text-shadow:
+          0 0 20px rgba(255, 0, 212, 0.863),
+          0 0 35px rgba(255, 0, 212, 0.863),
+          0 0 75px rgba(255, 0, 212, 0.863);
+      }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');

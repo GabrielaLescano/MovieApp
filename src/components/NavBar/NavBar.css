@@ -1,9 +1,9 @@
 .navbar {
-    height: 56px;
+    height: 30px;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #303236;
+    background-color: #1006499d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,14 +34,14 @@
 }
 
 .list-item a {
-    color: white;
+    color: rgb(223, 17, 172);
     height: 100%;
-    padding: 16px 10px;
+    padding: 6px 10px;
     border-bottom: 4px solid transparent;
 }
 
 .list-item a:hover,
 .list-item a.active {
-    background-color: #808080;
-    color: white;
+    background-color: rgba(223, 17, 172,0.6);
+    color: rgb(0, 222, 230);
 }

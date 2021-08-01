@@ -23,11 +23,12 @@ export class Buscador extends Component {
   render() {
     const { title } = this.state;
     return (
-      <div>
-        <h2>Buscador</h2>
+      <div className='container-search'>
+        <div className='neon'>
+        <p>Buscador de Películas</p>
         <form className="form-container" onSubmit={(e) => this.handleSubmit(e)}>
           <div>
-            <label className="label" htmlFor="title">Película: </label>
+            <label className="label" htmlFor="title"> </label>
             <input
               type="text"
               id="title"
@@ -36,8 +37,11 @@ export class Buscador extends Component {
               onChange={(e) => this.handleChange(e)}
             />
           </div>
-          <button type="submit">BUSCAR</button>
+          <button className='myButton'
+          type="submit">BUSCAR</button>
+          
         </form>
+        </div>
         <ul>
           {
             this.props.movies && this.props.movies.map(movie => (
